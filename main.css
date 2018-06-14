@@ -1,0 +1,188 @@
+body{
+	padding: 0;
+	margin:0;
+}
+
+.container{
+	
+	padding: 0;
+	margin:0;
+	height: 100vh;
+}
+
+.nav{
+	height: 100vh;
+	margin:0;
+	float: left;
+	padding: 15px 10px 15px 10px;
+}
+
+.main{
+	height: auto;
+	width: 80%;	
+	margin:0;
+	float: left;
+}
+
+#user{
+	border-radius: 50%;
+	height: 50px;
+	width:50px;
+}
+
+img{
+	
+	height: 30px;
+	width: 30px;
+}
+#user{
+	border-radius: 50%;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+section{
+	
+	position: relative;
+	width: 200px;
+	margin: 15px; 
+}
+
+
+/*label{
+	position: absolute;
+	top: 28%;
+	left:30%;
+}*/
+
+#create{
+	position: relative;
+	width: 800px;
+	height: 40px;
+	margin:50px 10px;
+	border-radius: 10px;
+	padding: 2px 10px;
+	
+}
+/*
+.main1{
+	/*border: 1px solid red;
+	position:absolute;
+	left: 20%;
+	top: 0;
+}*/
+.main2{
+	height: 100%;
+	width: 100%;
+	display: table;
+	float: left;
+	/*position:absolute;
+	left: 20%;
+	top: 0;*/
+}
+
+form{
+	position: fixed;
+	vertical-align: center;
+	width: 200px;
+	height: auto;
+	color: black;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+
+.tasks{
+	float: left;
+	text-align: left;
+	margin: 15px;
+	padding: 17px;
+	border: 1px solid red;
+	background-color: lavender;
+	/*background: url("theme.jpg") ;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+.tasks:nth-child(3n+0){
+	background-color: lavender;
+}
+.tasks:nth-child(3n+1){
+	background-color: lavenderblush;
+}
+.tasks:nth-child(3n+2){
+	background-color: whitesmoke;
+}
+
+
+.tasks:hover{
+	cursor: pointer;
+}
+
+
+/*.details{
+	position: fixed;
+	vertical-align: center;
+	width: 200px;
+	height: auto;
+	color: black;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+*/
+aside{
+	position: absolute;
+	right: 250px;
+	top:55px;
+}
+
+fieldset{
+	margin:5px;
+}
+
+.today{
+	display: inline-block;
+	color:black;
+}
+.prev{
+	display: inline-block;
+	color:red;
+}
+.next{
+	display: inline-block;
+	color: green;
+}
+
+#new{
+	padding: 30px 10px;
+	display: none;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.light{
+	opacity: 0;
+}
+.enabled{
+	pointer-events: auto;
+	opacity: 1;
+}
+#pin{
+	width:13px;
+	height: 13px;
+
+}
+#createTask{
+	margin-top: 30px;
+	width:300px;
+	height:450px;
+	overflow: scroll;
+}
+/*#add{
+	text-decoration: underline;
+	font-size: 16px;
+	font-weight: bold;
+	color: blue;
+}*/

@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>To Do List App</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+<div class="container">
+<?php
+
+session_start();
+$_SESSION['img'] = "user-f.png";
+$_SESSION['name'] = "Abhighyaa Jain";
+
+?>
+	<div class="nav">
+		<?php echo file_get_contents('nav.php');?>
+	<?php
+echo "hi";
+	?>		
+		<section>
+			<img id="user" src="user-f.png">
+			<label id="name">Abhighyaa Jain</label>
+		</section>		
+
+		<section>
+			<img src="https://png.icons8.com/ios/50/000000/sun.png">
+			<a href="myday.php">My day</a>
+		</section>
+	
+		<section>
+			<img src="https://png.icons8.com/cotton/50/000000/checklist.png">
+			<a href="index.php">To do</a>
+		</section>
+
+
+			
+		<!--<section>
+			<img src="https://png.icons8.com/dusk/50/000000/shop.png">
+			<a class="label">Shopping</a>
+		</section>	
+
+		<section>
+			<img src="https://png.icons8.com/color/50/000000/weightlift.png">
+			<a class="label">Workout</a>
+		</section>
+
+		<section>
+			<img src="https://png.icons8.com/dusk/50/000000/movies-folder.png">
+			<a class="label">Movies to watch</a>
+		</section>
+		
+		<section>
+			<img src="https://png.icons8.com/office/40/000000/family.png">
+			<a class="label">Family</a>
+		</section>-->
+
+		<section>
+			<img src="https://png.icons8.com/dusk/40/000000/add.png">
+			<a id="newlabel">New label</a>
+			<div id="new">
+				<input type="text" id="input" name="new" placeholder="Create new label">
+				<button id="done">Done</button>
+			</div>
+		</section>
+	</div>
+
+	<div class="main">
+
+		<div class="main1">
+			<input type="text" id="create" name="task" placeholder="create new task here">
+
+			<aside>
+				<a href="#"><img src="https://png.icons8.com/dusk/50/000000/picture.png"></a>
+				<a href="#"><img src="https://png.icons8.com/material/50/000000/checklist.png"></a>
+			
+			</aside>
+
+			<div class="modal">
+				
+				<form action="savetask.php" method="POST">
+					<fieldset>
+						<legend>Create Task</legend>
+						<label>What needs to be done?</label><br>
+						<input type="text" name="taskname" required><br><br>
+						<label>Description</label><br>
+						<textarea name="description"></textarea><br><br>
+						<label>Any due dates?</label><br>
+						<input type="date" name="date"><br><br>
+						<label>Label</label><br>
+						<input list="label" type="label" name="label">
+						<datalist id="label">
+							<option>Default(To do)</option>
+							<option>Shopping</option>
+							<option>Workout</option>
+							<option>Movies to watch</option>
+							<option>family</option>
+							<option>add new</option>
+						</datalist><br><br><br>
+						<a href="#" id="cancel">Cancel</a>
+						<input type="submit" name="Save" id="save">
+
+					</fieldset>
+				</form>
+
+			</div>
+
+		</div>
+
+		<div class="main2">
+			
