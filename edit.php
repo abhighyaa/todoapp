@@ -141,7 +141,7 @@
 				if ($i%2==0 ) {
 					$j = $i/2 ;
 					 echo '<label>What needs to be done?</label><br>
-			<input type="text" id="taskname"name="taskname" value="'. $temp.'"><br><br>';
+			<input type="text" disabled id="taskname"name="taskname" value="'. $temp.'"><br><br>';
 
 				}
 				else{

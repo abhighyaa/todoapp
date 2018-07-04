@@ -14,7 +14,7 @@ $(function(){
  	$("#create").focus(function(){
         $("#createTask").show();
         $(".main2").addClass("disabled light");
-         $(".main1").addClass("disabled");
+         $(".main1").hide();
           $(".nav").addClass("disabled");
           $(".tasks").addClass("disabled light");
   });
@@ -75,20 +75,20 @@ $("#search").blur(function(){
     });
  
 
-    $(".tasks").click(function(){
-      //alert($(this).text());
-      $(".main1").addClass("enabled");
-      $(".main2").addClass("enabled");  
-        $(".nav").addClass("enabled"); 
-      $(".tasks").addClass("disabled");
-      $($(this)).addClass("enabled");
-      $($(this)).animate({
+    // $(".tasks").click(function(){
+    //   //alert($(this).text());
+    //   $(".main1").addClass("enabled");
+    //   $(".main2").addClass("enabled");  
+    //     $(".nav").addClass("enabled"); 
+    //   $(".tasks").addClass("disabled");
+    //   $($(this)).addClass("enabled");
+    //   $($(this)).animate({
         
-        fontSize: '30px',
-        left:'+=30px',
-        top:'+=30px'
-      },"slow");
-    });
+    //     fontSize: '30px',
+    //     left:'+=30px',
+    //     top:'+=30px'
+    //   },"slow");
+    // });
 
     $("body").on('click','.edit',function(){
      //  $text = $(this).parent().text();

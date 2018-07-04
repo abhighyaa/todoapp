@@ -20,7 +20,7 @@ $due = $_SESSION['due'];
 if($status!="Completed"){
 
 
-$sql = "UPDATE tasks SET task='$task', description='$des',duedate='$date1',done='$status',priority='$priority',pin='$pin' WHERE task='$taskname' ";
+$sql = "UPDATE tasks SET description=$des,duedate=$date1,done=$status,priority=$priority,pin=$pin WHERE task=$taskname ";
 
 /*else if($task==""&&$des!=""){
 $sql = "UPDATE tasks SET description='$des',duedate='$due',done='$status' WHERE task='$taskname' ";

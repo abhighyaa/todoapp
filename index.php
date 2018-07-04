@@ -42,8 +42,8 @@ if ($result->num_rows > 0) {
 		
 		//echo '<b> Taskname : '.$task.' </b><br><br>Description : '.$des.'<br><br>';
 		echo ' Due date : '.$date.' <br><br> Label : '.$label.'<br><br> Status : '.$status.'<br><br> Priority : '.$priority.'<br><br>
-<button class="edit" value="Edit"> Edit</button>
-				<button class="cancel" value="Cancel"> Cancel</button></fieldset></div>';
+
+				</div>';
 		
 /*		echo '<div class="details">
 			<fieldset>

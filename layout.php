@@ -85,15 +85,10 @@
 
 		<div class="main1">
 
-			<input type="text" id="create" name="task" placeholder="create new task here">
+			<input type="text" id="create" name="task" placeholder="create new task here" style="width:600px">
 
-			<aside>
-				<a href="#"><img src="https://png.icons8.com/dusk/50/000000/picture.png"></a>
-				<a href="#"><img src="https://png.icons8.com/material/50/000000/checklist.png"></a>
-			
-			</aside>
 
-			<input type="text" id="search" name="search" placeholder="Search any Task">
+			<input type="text" id="search" name="search" placeholder="Search any Task" style="width:300px">
 		</div>
 
 		<div class="main2">

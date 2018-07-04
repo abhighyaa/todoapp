@@ -180,6 +180,9 @@ fieldset{
 	height:450px;
 	overflow: scroll;
 }
+form{
+	overflow: scroll;
+}
 /*#add{
 	text-decoration: underline;
 	font-size: 16px;
